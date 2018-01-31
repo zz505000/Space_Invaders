@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript">
+      // first, create the object that contains
+      // configuration variables
+      MTIConfig = {};
+
+      // next, add a variable that will control
+      // whether or not FOUT will be prevented
+      MTIConfig.EnableCustomFOUTHandler = true // true = prevent FOUT
+    </script>
+
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/3ac768d8-7a5c-4fd8-b377-f61d7f1760fa.js"></script>
+
+    <title>Space Invaders - Annotated code</title>
+
+    <script src="space-invaders.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href='/'>
+        <h1>Annotated code</h1>
+        <div class="strapline">short, heavily annotated JavaScript programs</div>
+      </a>
+    </div>
+
+    <audio id="shoot-sound" src="/space-invaders/shoot.mp3"></audio>
+
+    <div class="grid-element project">
+      <canvas id="space-invaders" width="300" height="300"></canvas>
+
+      <h2>Space Invaders</h2>
+      <p class="project-links">
+        <a href="docs/space-invaders.html">annotated code</a>
+        <a href="space-invaders.js">raw code</a>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Move with the arrow keys.  Shoot with the S key.  Refresh to play again.
+      </p>
+
+      <p>
+        Demonstrates a game loop, collision detection, keyboard input,
+        drawing to the canvas and playing sounds.
+      </p>
+    </div>
+
+    <div class="footer">
+      <a href='https://github.com/maryrosecook/annotated-code'>GitHub</a> &nbsp; &nbsp;
+      <a href='http://maryrosecook.com'>Mary Rose Cook</a>
+    </div>
+  </body>
+</html>

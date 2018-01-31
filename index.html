@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript">
+      // first, create the object that contains
+      // configuration variables
+      MTIConfig = {};
+
+      // next, add a variable that will control
+      // whether or not FOUT will be prevented
+      MTIConfig.EnableCustomFOUTHandler = true // true = prevent FOUT
+    </script>
+
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/3ac768d8-7a5c-4fd8-b377-f61d7f1760fa.js"></script>
+
+    <title>Annotated code</title>
+
+    <script src="space-invaders/space-invaders.js"></script>
+    <script src="circles-bouncing-off-lines/circles-bouncing-off-lines.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href='/'>
+        <h1>Annotated code</h1>
+        <div class="strapline">short, heavily annotated JavaScript programs</div>
+      </a>
+    </div>
+
+    <audio id="shoot-sound" src="/space-invaders/shoot.mp3"></audio>
+
+    <div class="grid" style="height: 800px;">
+      <a href="/gitlet/index.html">
+        <div class="grid-element main">
+          <div class="gitlet-introduction">
+            <div>$ gitlet init</div>
+            <div>$ echo first > number.txt</div>
+            <div>$ gitlet add number.txt</div>
+            <div>$ gitlet commit -m "first"</div>
+            <div>[master 2912d7a2] first</div>
+          </div>
+          <h2>Git</h2>
+        </div>
+      </a>
+
+      <a href="/circles-bouncing-off-lines/index.html">
+        <div class="grid-element main">
+          <canvas id="circles-bouncing-off-lines" width="300" height="300"></canvas>
+
+          <h2>Circles bouncing off lines</h2>
+        </div>
+      </a>
+
+      <a href="/space-invaders/index.html">
+        <div class="grid-element main">
+          <canvas id="space-invaders" width="300" height="300"></canvas>
+
+          <h2>Space Invaders</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <a href='https://github.com/maryrosecook/annotated-code'>GitHub</a> &nbsp; &nbsp;
+      <a href='http://maryrosecook.com'>Mary Rose Cook</a>
+    </div>
+  </body>
+</html>
